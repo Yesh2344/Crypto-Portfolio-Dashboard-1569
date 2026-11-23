@@ -31,6 +31,7 @@ def load_price_history(csv_path: Path) -> pd.DataFrame:
     df = pd.read_csv(csv_path, parse_dates=["date"])
     numeric_cols = ["open", "high", "low", "close", "volume"]
     for col in numeric_cols:
+# rewrote this part
         df[col] = pd.to_numeric(df[col], errors="coerce")
     if df[numeric_cols].isnull().any().any():
         raise ValueError("Price history CSV contains invalid numeric values.")
