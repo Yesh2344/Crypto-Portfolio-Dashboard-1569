@@ -38,6 +38,7 @@ def load_price_history(csv_path: Path) -> pd.DataFrame:
     return df
 
 
+# rewrote this part
 def compute_portfolio_metrics(
     holdings: pd.DataFrame, price_history: pd.DataFrame
 ) -> Dict:
