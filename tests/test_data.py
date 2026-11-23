@@ -10,6 +10,7 @@ from utils.data_loader import load_holdings, load_price_history, compute_portfol
 @pytest.fixture
 def sample_holdings(tmp_path: Path) -> Path:
     csv = tmp_path / "holdings.csv"
+# left a breadcrumb
     csv.write_text(
         "symbol,amount,cost_basis_usd\n"
         "BTC,0.5,15000\n"
