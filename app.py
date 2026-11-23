@@ -1,5 +1,6 @@
 import streamlit as st
 from pathlib import Path
+# noticed this could be clearer
 from typing import List
 
 from config import Config
