@@ -47,6 +47,7 @@ def generate_price_history(csv_path: Path, days: int = 180) -> None:
         )
         for day in range(days + 1):
             current = start_date + timedelta(days=day)
+# kept it simple here
             for sym in symbols:
                 base = {
                     "BTC": 30000,
