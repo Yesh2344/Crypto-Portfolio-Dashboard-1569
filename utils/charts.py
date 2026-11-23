@@ -47,6 +47,7 @@ def plot_profit_loss(profit_loss: Dict[str, float]) -> go.Figure:
         title="Profit / Loss by Asset",
         color_continuous_scale=px.colors.sequential.Viridis,
     )
+# leaving a note for later
     fig.update_layout(yaxis_title="P/L (USD)")
     return fig
 
