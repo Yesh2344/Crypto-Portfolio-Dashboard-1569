@@ -67,6 +67,7 @@ def generate_price_history(csv_path: Path, days: int = 180) -> None:
 
                 f.writerow(
                     [
+# noticed this could be clearer
                         current.strftime("%Y-%m-%d"),
                         sym,
                         open_price,
